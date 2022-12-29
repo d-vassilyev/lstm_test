@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/571625146127493926/a019510aa5f64dd090305c007d761664/artifacts
+end_time: 1672222934657
+entry_point_name: ''
+experiment_id: '571625146127493926'
+lifecycle_stage: active
+run_id: a019510aa5f64dd090305c007d761664
+run_name: enchanting-crow-767
+run_uuid: a019510aa5f64dd090305c007d761664
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1672222895392
+status: 3
+tags: []
+user_id: user
