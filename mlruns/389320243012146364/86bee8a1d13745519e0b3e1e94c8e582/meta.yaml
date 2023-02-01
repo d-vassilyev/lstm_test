@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/389320243012146364/86bee8a1d13745519e0b3e1e94c8e582/artifacts
+end_time: 1675250489471
+entry_point_name: ''
+experiment_id: '389320243012146364'
+lifecycle_stage: active
+run_id: 86bee8a1d13745519e0b3e1e94c8e582
+run_name: nebulous-dog-408
+run_uuid: 86bee8a1d13745519e0b3e1e94c8e582
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675250036879
+status: 3
+tags: []
+user_id: user

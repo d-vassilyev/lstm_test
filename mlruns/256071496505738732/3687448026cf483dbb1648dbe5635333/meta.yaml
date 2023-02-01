@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/256071496505738732/3687448026cf483dbb1648dbe5635333/artifacts
+end_time: 1675253080618
+entry_point_name: ''
+experiment_id: '256071496505738732'
+lifecycle_stage: active
+run_id: 3687448026cf483dbb1648dbe5635333
+run_name: victorious-hare-56
+run_uuid: 3687448026cf483dbb1648dbe5635333
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675252648086
+status: 3
+tags: []
+user_id: user
