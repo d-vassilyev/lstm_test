@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/877007674727063543/934ba7cdc83041e09cf9126048111464/artifacts
+end_time: 1675246500221
+entry_point_name: ''
+experiment_id: 'agadyr220_P'
+lifecycle_stage: active
+run_id: 934ba7cdc83041e09cf9126048111464
+run_name: upbeat-mole-567
+run_uuid: 934ba7cdc83041e09cf9126048111464
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675246062271
+status: 3
+tags: []
+user_id: user

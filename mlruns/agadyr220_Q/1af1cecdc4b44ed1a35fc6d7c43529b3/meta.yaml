@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/410295183632872246/1af1cecdc4b44ed1a35fc6d7c43529b3/artifacts
+end_time: 1675247132061
+entry_point_name: ''
+experiment_id: 'agadyr220_Q'
+lifecycle_stage: active
+run_id: 1af1cecdc4b44ed1a35fc6d7c43529b3
+run_name: capable-stoat-393
+run_uuid: 1af1cecdc4b44ed1a35fc6d7c43529b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675246695855
+status: 3
+tags: []
+user_id: user

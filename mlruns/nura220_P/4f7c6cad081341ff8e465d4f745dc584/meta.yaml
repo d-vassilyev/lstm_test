@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/761511152543573023/4f7c6cad081341ff8e465d4f745dc584/artifacts
+end_time: 1675252113258
+entry_point_name: ''
+experiment_id: 'nura220_P'
+lifecycle_stage: active
+run_id: 4f7c6cad081341ff8e465d4f745dc584
+run_name: skillful-koi-242
+run_uuid: 4f7c6cad081341ff8e465d4f745dc584
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675251638162
+status: 3
+tags: []
+user_id: user
