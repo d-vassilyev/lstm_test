@@ -1,6 +1,6 @@
 artifact_location: mlflow-artifacts:/595750006291680783
 creation_time: 1675410619824
-experiment_id: Agadyr_F_u220_Q
+experiment_id: nodes_agadyr_f_u220_q_load
 last_update_time: 1675410619824
 lifecycle_stage: active
-name: Agadyr_F_u220_Q
+name: nodes_agadyr_f_u220_q_load
