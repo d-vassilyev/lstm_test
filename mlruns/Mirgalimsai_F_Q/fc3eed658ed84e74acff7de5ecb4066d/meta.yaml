@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/447139510046645217/fc3eed658ed84e74acff7de5ecb4066d/artifacts
+end_time: 1675416253326
+entry_point_name: ''
+experiment_id: Mirgalimsai_F_Q
+lifecycle_stage: active
+run_id: fc3eed658ed84e74acff7de5ecb4066d
+run_name: agreeable-skunk-876
+run_uuid: fc3eed658ed84e74acff7de5ecb4066d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675415667664
+status: 3
+tags: []
+user_id: user

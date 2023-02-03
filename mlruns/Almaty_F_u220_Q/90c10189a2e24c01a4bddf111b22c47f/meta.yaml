@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/805984416180858780/90c10189a2e24c01a4bddf111b22c47f/artifacts
+end_time: 1675412415520
+entry_point_name: ''
+experiment_id: Almaty_F_u220_Q
+lifecycle_stage: active
+run_id: 90c10189a2e24c01a4bddf111b22c47f
+run_name: whimsical-horse-254
+run_uuid: 90c10189a2e24c01a4bddf111b22c47f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675411947688
+status: 3
+tags: []
+user_id: user

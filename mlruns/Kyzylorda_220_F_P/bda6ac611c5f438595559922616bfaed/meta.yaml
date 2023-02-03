@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/661149777664822069/bda6ac611c5f438595559922616bfaed/artifacts
+end_time: 1675413004302
+entry_point_name: ''
+experiment_id: Kyzylorda_220_F_P
+lifecycle_stage: active
+run_id: bda6ac611c5f438595559922616bfaed
+run_name: tasteful-shoat-117
+run_uuid: bda6ac611c5f438595559922616bfaed
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675412426818
+status: 3
+tags: []
+user_id: user

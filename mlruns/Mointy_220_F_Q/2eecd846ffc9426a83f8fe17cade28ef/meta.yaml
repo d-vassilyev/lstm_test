@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/858461293985399670/2eecd846ffc9426a83f8fe17cade28ef/artifacts
+end_time: 1675417399071
+entry_point_name: ''
+experiment_id: Mointy_220_F_Q
+lifecycle_stage: active
+run_id: 2eecd846ffc9426a83f8fe17cade28ef
+run_name: dazzling-asp-373
+run_uuid: 2eecd846ffc9426a83f8fe17cade28ef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675416805229
+status: 3
+tags: []
+user_id: user

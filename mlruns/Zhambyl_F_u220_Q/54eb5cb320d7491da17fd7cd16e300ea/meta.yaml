@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/800779348667980955/54eb5cb320d7491da17fd7cd16e300ea/artifacts
+end_time: 1675419738257
+entry_point_name: ''
+experiment_id: Zhambyl_F_u220_Q
+lifecycle_stage: active
+run_id: 54eb5cb320d7491da17fd7cd16e300ea
+run_name: kindly-worm-536
+run_uuid: 54eb5cb320d7491da17fd7cd16e300ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675419198180
+status: 3
+tags: []
+user_id: user
