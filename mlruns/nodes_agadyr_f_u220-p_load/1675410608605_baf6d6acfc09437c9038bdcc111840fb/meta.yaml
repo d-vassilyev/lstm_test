@@ -1,7 +1,7 @@
 artifact_uri: mlflow-artifacts:/934586482332129975/baf6d6acfc09437c9038bdcc111840fb/artifacts
 end_time: 1675410608605
 entry_point_name: ''
-experiment_id: nodes_agadyr_f_u220_p_load
+experiment_id: nodes_agadyr_f_u220-p_load
 lifecycle_stage: active
 run_id: 1675410608605_baf6d6acfc09437c9038bdcc111840fb
 run_name: secretive-bat-788
