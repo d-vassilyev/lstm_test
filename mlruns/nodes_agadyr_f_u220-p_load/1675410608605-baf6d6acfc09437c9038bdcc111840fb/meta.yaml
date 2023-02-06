@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/934586482332129975/baf6d6acfc09437c9038bdcc111840fb/artifacts
+end_time: 1675410608605
+entry_point_name: ''
+experiment_id: nodes_agadyr_f_u220-p_load
+lifecycle_stage: active
+run_id: 1675410608605-baf6d6acfc09437c9038bdcc111840fb
+run_name: secretive-bat-788
+run_uuid: 1675410608605-baf6d6acfc09437c9038bdcc111840fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1675410172202
+status: 3
+tags: []
+user_id: user
