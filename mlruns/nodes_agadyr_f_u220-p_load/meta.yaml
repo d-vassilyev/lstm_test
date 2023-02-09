@@ -1,6 +1,6 @@
-artifact_location: mlflow-artifacts:/828055947465462834
-creation_time: 1675765789556
+artifact_location: mlflow-artifacts:/275872961660180725
+creation_time: 1675936581138
 experiment_id: nodes_agadyr_f_u220-p_load
-last_update_time: 1675765789556
+last_update_time: 1675936581138
 lifecycle_stage: active
 name: nodes_agadyr_f_u220-p_load

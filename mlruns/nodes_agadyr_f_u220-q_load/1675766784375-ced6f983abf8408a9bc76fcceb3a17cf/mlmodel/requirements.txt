@@ -1,5 +1,0 @@
-mlflow<3,>=2.1
-pandas==1.5.3
-pillow==9.4.0
-scipy==1.10.0
-tensorflow==2.10.0
