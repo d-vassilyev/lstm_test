@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/145575081783449858/b0d23d98809a4f59b33147d09bcec9b3/artifacts
+end_time: 1676027304097
+entry_point_name: ''
+experiment_id: nodes_agadyr_f_u220-q_load
+lifecycle_stage: active
+run_id: b0d23d98809a4f59b33147d09bcec9b3
+run_name: worried-finch-95
+run_uuid: b0d23d98809a4f59b33147d09bcec9b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1676026718698
+status: 3
+tags: []
+user_id: user
