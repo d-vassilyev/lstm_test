@@ -86,20 +86,36 @@ def train_model(SOURCE_DATA_POWER,
   train_size = int((total_size/input_size)*split_size)*input_size
   test_size = total_size - train_size
 
-  train = np.array(data_scaled.iloc[:train_size])
-  test = np.array(data_scaled.iloc[train_size:total_size])
+  # train = np.array(data_scaled.iloc[:train_size])
+  # test = np.array(data_scaled.iloc[train_size:total_size])
+
+  # x_train, y_train, x_test, y_test = np.array([]), np.array([]), np.array([]), np.array([])
+  # x_train = np.reshape(x_train, (0,len(scalers)))
+  # x_test = np.reshape(x_test, (0,len(scalers)))
+
+  # for i in range(0, train_size-seq_size, step):
+  #   x_train = np.append(x_train, train[i:i+input_size], axis=0)
+  #   y_train = np.append(y_train, train[i+input_size:i+seq_size,0], axis=0)
+
+  # for i in range(0, test_size-seq_size, step):
+  #   x_test = np.append(x_test, test[i:i+input_size], axis=0)
+  #   y_test = np.append(y_test, test[i+input_size:i+seq_size,0], axis=0)
+
+  train_test_data = np.array(data_scaled.iloc[:])
 
   x_train, y_train, x_test, y_test = np.array([]), np.array([]), np.array([]), np.array([])
   x_train = np.reshape(x_train, (0,len(scalers)))
   x_test = np.reshape(x_test, (0,len(scalers)))
 
-  for i in range(0, train_size-seq_size, step):
-    x_train = np.append(x_train, train[i:i+input_size], axis=0)
-    y_train = np.append(y_train, train[i+input_size:i+seq_size,0], axis=0)
-
-  for i in range(0, test_size-seq_size, step):
-    x_test = np.append(x_test, test[i:i+input_size], axis=0)
-    y_test = np.append(y_test, test[i+input_size:i+seq_size,0], axis=0)
+  j = 1
+  for i in range(0, total_size-seq_size, step):
+    if j % 8 == 0:
+      x_test = np.append(x_test, train_test_data[i:i+input_size], axis=0)
+      y_test = np.append(y_test, train_test_data[i+input_size:i+seq_size,0], axis=0)
+    else:
+      x_train = np.append(x_train, train_test_data[i:i+input_size], axis=0)
+      y_train = np.append(y_train, train_test_data[i+input_size:i+seq_size,0], axis=0)
+    j += 1
 
   x_train = np.reshape(x_train, (int(x_train.shape[0]/input_size), input_size, len(scalers)))
   y_train = np.reshape(y_train, (int(y_train.shape[0]/output_size), output_size, 1))
@@ -200,10 +216,10 @@ def predict_get_metrics(model,
   me = max_error(d[input_size:input_size + hours_num], p[:hours_num])
   mae = mean_absolute_error(d[input_size:input_size + hours_num], p[:hours_num])
   r2s = r2_score(d[input_size:input_size + hours_num], p[:hours_num])
-  print('Max error %.2f' % me)
-  print('Absolute error %.2f' % mae)
-  print('R2 score %.2f' % r2s)
-  print('')
+  # print('Max error %.2f' % me)
+  # print('Absolute error %.2f' % mae)
+  # print('R2 score %.2f' % r2s)
+  # print('')
 
   return me, mae, r2s
  
@@ -273,4 +289,4 @@ for file in files:
       metrics = {'Max error': me, 'Absolute error': mae,'R2 score': r2s}
       mlflow.log_metrics(metrics)
 
-  model.save(run_path + '/mlmodel')
+  mlflow.keras.save_model(model, run_path + '/mlmodel')
