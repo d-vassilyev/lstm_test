@@ -15,8 +15,38 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import max_error, mean_absolute_error, r2_score
 
+from statsmodels.tsa.seasonal import seasonal_decompose
+
 import mlflow
 import mlflow.keras
+
+def find_anomalies(sigma, result):
+  resid = result.resid
+  resid.dropna(inplace=True)
+
+  mean = sum(resid)/len(resid)
+  delta = [(resid[k] - mean)**2 for k in range(len(resid))]
+  variance = sum(delta)/len(delta)
+  deviation = variance**0.5
+
+  high = mean + sigma * deviation
+  low = mean - sigma * deviation
+
+  anomalies = resid.copy()
+
+  for k in range(len(anomalies)):
+    if resid[k] <= high and resid[k] >= low:
+      anomalies.drop(resid.index[k], inplace=True)
+  anomalies.index = pd.to_datetime(anomalies.index)
+
+  return anomalies, resid, high, low
+
+def resid_reduction(df, anomalies, resid, high, low):
+  for k in range(len(anomalies)):
+    if resid[anomalies.index[k]] < low:
+      df.loc[anomalies.index[k]] += low - resid[anomalies.index[k]]
+    elif resid[anomalies.index[k]] > high:
+      df.loc[anomalies.index[k]] += high - resid[anomalies.index[k]]
 
 def train_model(SOURCE_DATA_POWER,
                 anomaly_threshold,
@@ -37,13 +67,13 @@ def train_model(SOURCE_DATA_POWER,
   df = df.drop([df.columns[0],df.columns[2]], axis=1)
 
   a = pd.DataFrame()
-  anomalies = pd.DataFrame()
+  anomalies_same_val = pd.DataFrame()
 
   f = 0
   for i in range(1, len(df)):
     if np.isnan(df.iloc[i,0]):
-      anomalies = pd.concat([anomalies,df.iloc[[i]]])
-      anomalies.iloc[-1, 0] = 0
+      anomalies_same_val = pd.concat([anomalies_same_val,df.iloc[[i]]])
+      anomalies_same_val.iloc[-1, 0] = 0
 
     delta = abs(df.iloc[i, 0] - df.iloc[i-1, 0])
     if delta <= anomaly_threshold:
@@ -54,14 +84,22 @@ def train_model(SOURCE_DATA_POWER,
     elif delta > anomaly_threshold and f == 1:
       f = 0
       if len(a) >= anomaly_same_val_len:
-        anomalies = pd.concat([anomalies, a])
+        anomalies_same_val = pd.concat([anomalies_same_val, a])
       a.drop(a.index, inplace=True)
 
   max_load = max(list(df.iloc[:,0]))
   min_load = min(list(df.iloc[:,0]))
   df = df.replace(np.nan, 2*min_load-max_load)
-  for i in range(len(anomalies)):
-    df.loc[anomalies.index[i]] = 2*min_load-max_load
+  for i in range(len(anomalies_same_val)):
+    df.loc[anomalies_same_val.index[i]] = 2*min_load-max_load
+
+  for p in range(0, len(df)//h):
+    i = h * p
+    j = h * (p + 1)
+    result = seasonal_decompose(df.iloc[i:j], model='additive')
+    anomalies, resid, high, low = find_anomalies(sigma, result)
+    if len(anomalies) > 0:
+      resid_reduction(df, anomalies, resid, high, low)
 
   data = df.copy()
   data['Month'] = data.index.month
@@ -257,10 +295,13 @@ for file in files:
     split_size = 0.85
     n_neurons  = 150
     drop = 0.4
-    epochs_num = 150
+    epochs_num = 200
 
     hours_num = output_size
     step_k = 5
+
+    h = 24 * 7
+    sigma = 3
     
     model, data_scaled, total_size, train_size, test_size, scalers, x_train, y_train, x_test, y_test = train_model(SOURCE_DATA_POWER,
                       anomaly_threshold,
