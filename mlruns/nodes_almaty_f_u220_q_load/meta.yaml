@@ -1,6 +1,6 @@
 artifact_location: mlflow-artifacts:/691790213854277631
 creation_time: 1676890144785
-experiment_id: nodes_almaty_f_u220_model_control-q_load
+experiment_id: nodes_almaty_f_u220_q_load
 last_update_time: 1676890144785
 lifecycle_stage: active
-name: nodes_almaty_f_u220_model_control-q_load
+name: nodes_almaty_f_u220_q_load

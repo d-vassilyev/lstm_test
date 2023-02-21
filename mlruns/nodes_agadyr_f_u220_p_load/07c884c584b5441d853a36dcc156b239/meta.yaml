@@ -1,7 +1,7 @@
 artifact_uri: mlflow-artifacts:/636789924792817540/07c884c584b5441d853a36dcc156b239/artifacts
 end_time: 1676888763588
 entry_point_name: ''
-experiment_id: nodes_agadyr_f_u220_model_control-p_load
+experiment_id: nodes_agadyr_f_u220_p_load
 lifecycle_stage: active
 run_id: 07c884c584b5441d853a36dcc156b239
 run_name: nosy-dolphin-946

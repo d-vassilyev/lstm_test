@@ -1,7 +1,7 @@
 artifact_uri: mlflow-artifacts:/187661261248093436/ab14a5b115a9436a883e8243fc6ebeed/artifacts
 end_time: 1676890095669
 entry_point_name: ''
-experiment_id: nodes_almaty_f_u220_model_control-p_load
+experiment_id: nodes_almaty_f_u220_p_load
 lifecycle_stage: active
 run_id: ab14a5b115a9436a883e8243fc6ebeed
 run_name: gregarious-pug-480

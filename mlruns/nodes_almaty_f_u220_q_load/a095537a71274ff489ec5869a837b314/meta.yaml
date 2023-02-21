@@ -1,7 +1,7 @@
 artifact_uri: mlflow-artifacts:/691790213854277631/a095537a71274ff489ec5869a837b314/artifacts
 end_time: 1676890765291
 entry_point_name: ''
-experiment_id: nodes_almaty_f_u220_model_control-q_load
+experiment_id: nodes_almaty_f_u220_q_load
 lifecycle_stage: active
 run_id: a095537a71274ff489ec5869a837b314
 run_name: bemused-jay-398
