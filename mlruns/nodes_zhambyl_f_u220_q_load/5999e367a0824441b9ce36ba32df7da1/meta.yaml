@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/796276243714428919/5999e367a0824441b9ce36ba32df7da1/artifacts
+end_time: 1676959557528
+entry_point_name: ''
+experiment_id: nodes_zhambyl_f_u220_q_load
+lifecycle_stage: active
+run_id: 5999e367a0824441b9ce36ba32df7da1
+run_name: amazing-goat-426
+run_uuid: 5999e367a0824441b9ce36ba32df7da1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1676958798455
+status: 3
+tags: []
+user_id: user
