@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/270283831321233998/cf32d2e47db94d9a8b99fef4650ae99e/artifacts
+end_time: 1677066963075
+entry_point_name: ''
+experiment_id: nodes_agadyr_f_u220_q_load
+lifecycle_stage: active
+run_id: cf32d2e47db94d9a8b99fef4650ae99e
+run_name: upbeat-kite-681
+run_uuid: cf32d2e47db94d9a8b99fef4650ae99e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677065892804
+status: 3
+tags: []
+user_id: user

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/460236226961980757/e077a95624e74c91bb92e7ef498f469f/artifacts
+end_time: 1677069025440
+entry_point_name: ''
+experiment_id: nodes_almaty_f_u220_p_load
+lifecycle_stage: active
+run_id: e077a95624e74c91bb92e7ef498f469f
+run_name: beautiful-conch-915
+run_uuid: e077a95624e74c91bb92e7ef498f469f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677066985767
+status: 3
+tags: []
+user_id: user

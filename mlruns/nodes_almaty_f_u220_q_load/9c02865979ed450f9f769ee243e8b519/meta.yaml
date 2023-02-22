@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/443289512530991148/9c02865979ed450f9f769ee243e8b519/artifacts
+end_time: 1677071215137
+entry_point_name: ''
+experiment_id: nodes_almaty_f_u220_q_load
+lifecycle_stage: active
+run_id: 9c02865979ed450f9f769ee243e8b519
+run_name: intrigued-mink-718
+run_uuid: 9c02865979ed450f9f769ee243e8b519
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1677069048493
+status: 3
+tags: []
+user_id: user

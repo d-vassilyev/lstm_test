@@ -1,6 +1,6 @@
-artifact_location: mlflow-artifacts:/991166233606887199
-creation_time: 1676958180271
+artifact_location: mlflow-artifacts:/715372622330193180
+creation_time: 1677071237653
 experiment_id: nodes_zhambyl_f_u220_p_load
-last_update_time: 1676958180271
+last_update_time: 1677071237653
 lifecycle_stage: active
 name: nodes_zhambyl_f_u220_p_load
